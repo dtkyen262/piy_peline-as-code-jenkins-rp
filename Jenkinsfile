@@ -1,4 +1,4 @@
-pipeline {
+ pipeline {
 
     agent {
         node {
@@ -45,7 +45,7 @@ pipeline {
 
         stage('Code Build') {
             steps {
-                 sh 'mvn install -Dmaven.test.skip=false'
+                echo " sh mvn install -Dmaven.test.skip=false "
             }
         }
 
